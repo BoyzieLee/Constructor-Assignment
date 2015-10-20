@@ -1,16 +1,17 @@
 // Constructors
 // Only add code to *THIS* section!
 
-// //////////// 1
 let Dog = function (info) {
   this.color = this.color || 'black';
   this.status = this.status || 'normal';
-
+  this.hungry = this.hungry === undefined ? true : false;
 }; 
 
+
 let Human = function (params) {
-  this.cool = this.cool;
   params = params || {};
+  this.cool = (params.cool !== undefined) ? params.cool : false;
+  
 
   this.pet = function(x) {
     x.status = 'happy';
@@ -19,8 +20,6 @@ let Human = function (params) {
   this.feed = function (dog) {
     dog.hungry = false;
   };
-
-
 
 };
 
