@@ -6,10 +6,12 @@
 'use strict';
 
 var Dog = function Dog(info) {
+  this.color = this.color || 'black';
   this.status = this.status || 'normal';
 };
 
 var Human = function Human(params) {
+  this.cool = this.cool;
   params = params || {};
 
   this.pet = function (x) {
@@ -20,9 +22,6 @@ var Human = function Human(params) {
     dog.hungry = false;
   };
 };
-// /////////// 2
-
-// /////////// 3
 
 ///
 ///

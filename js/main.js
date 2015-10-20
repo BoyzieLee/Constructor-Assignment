@@ -3,29 +3,26 @@
 
 // //////////// 1
 let Dog = function (info) {
+  this.color = this.color || 'black';
   this.status = this.status || 'normal';
 
 }; 
 
 let Human = function (params) {
+  this.cool = this.cool;
   params = params || {};
 
   this.pet = function(x) {
     x.status = 'happy';
   };
 
-
-this.feed = function (dog) {
+  this.feed = function (dog) {
     dog.hungry = false;
   };
 
 
+
 };
-// /////////// 2
-
-// /////////// 3
-
-
 
 ///
 ///
