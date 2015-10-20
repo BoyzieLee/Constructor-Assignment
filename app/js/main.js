@@ -5,9 +5,10 @@
 'use strict';
 
 var Dog = function Dog(info) {
+  info = info || {};
   this.color = this.color || 'black';
   this.status = this.status || 'normal';
-  this.hungry = this.hungry === undefined ? true : false;
+  this.hungry = info.hungry !== undefined ? info.hungry : true;
 };
 
 var Human = function Human(params) {
@@ -23,7 +24,6 @@ var Human = function Human(params) {
   };
 };
 
-///
 ///
 
 // Do not ADD or MODIFY code below this line :)

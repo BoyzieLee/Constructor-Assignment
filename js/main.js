@@ -2,9 +2,10 @@
 // Only add code to *THIS* section!
 
 let Dog = function (info) {
+  info = info || {};
   this.color = this.color || 'black';
   this.status = this.status || 'normal';
-  this.hungry = this.hungry === undefined ? true : false;
+  this.hungry = (info.hungry !== undefined) ? info.hungry : true;
 }; 
 
 
@@ -12,7 +13,6 @@ let Human = function (params) {
   params = params || {};
   this.cool = (params.cool !== undefined) ? params.cool : false;
   
-
   this.pet = function(x) {
     x.status = 'happy';
   };
@@ -23,7 +23,6 @@ let Human = function (params) {
 
 };
 
-///
 ///
 
 // Do not ADD or MODIFY code below this line :)
