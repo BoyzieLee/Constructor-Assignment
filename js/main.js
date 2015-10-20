@@ -2,6 +2,13 @@
 // Only add code to *THIS* section!
 
 ///
+let dog = function () {
+
+}; 
+
+let human = function () {
+
+};
 ///
 ///
 ///

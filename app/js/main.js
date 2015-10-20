@@ -3,14 +3,17 @@
 // Only add code to *THIS* section!
 
 ///
+'use strict';
+
+var dog = function dog() {};
+
+var human = function human() {};
 ///
 ///
 ///
 
 // Do not ADD or MODIFY code below this line :)
 // Dogs
-'use strict';
-
 var sadie = new Dog({
   color: 'black',
   hungry: false
