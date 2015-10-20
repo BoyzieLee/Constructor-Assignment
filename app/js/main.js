@@ -5,13 +5,17 @@
 'use strict';
 
 var Dog = function Dog(info) {
-  info = info || {};
-  this.status = 'normal';
+  this.color = this.color;
+  this.status = this.status || 'normal';
 };
 
 var Human = function Human(params) {
+
   params = params || {};
-  this.cool = params.cool;
+
+  this.pet = function (x) {
+    x.status = 'happy';
+  };
 };
 
 ///

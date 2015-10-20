@@ -2,14 +2,24 @@
 // Only add code to *THIS* section!
 
 let Dog = function (info) {
-  info = info || {};
-  this.status = 'normal';
+  this.color = this.color;
+  this.status = this.status || 'normal';
+
 }; 
 
 let Human = function (params) {
+
   params = params || {};
-  this.cool = params.cool;
+
+  
+  this.pet = function(x) {
+    x.status = 'happy';
+  };
+
+
+
 };
+
 
 
 
