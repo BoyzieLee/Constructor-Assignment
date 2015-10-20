@@ -1,15 +1,18 @@
 // Constructors
 // Only add code to *THIS* section!
 
-///
-let dog = function () {
-
+let Dog = function (info) {
+  info = info || {};
+  this.status = 'normal';
 }; 
 
-let human = function () {
-
+let Human = function (params) {
+  params = params || {};
+  this.cool = params.cool;
 };
-///
+
+
+
 ///
 ///
 
